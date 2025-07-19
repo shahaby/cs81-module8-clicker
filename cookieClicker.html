@@ -41,6 +41,26 @@
         // Create a variable to keep track of how many times the button has been clicked
         let counter = 0;
 
+        // Use addEventListener("click", function...) to run code when the button is clicked
+        button.addEventListener("click", function() {
+            // Increase your counter variable
+            counter++;
+            // Update the counter display on the page
+            counterDisplay.textContent = `Counter: ${counter}`;
+
+            // Use if or else if statements to show a new message at specific milestones
+            if (counter === 10) {
+                messageDisplay.textContent = "You’re just getting started";
+            } else if (counter === 25) {
+                messageDisplay.textContent = "Wow, that’s a lot of cookies";
+            } else if (counter === 50) {
+                messageDisplay.textContent = "Are you still clicking?";
+            } else if (counter === 100) {
+                messageDisplay.textContent = "You win! Maybe take a break";
+            }
+
+
+        });
     </script>
 </body>
 </html>
