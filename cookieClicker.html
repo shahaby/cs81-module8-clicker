@@ -50,15 +50,31 @@
 
             // Use if or else if statements to show a new message at specific milestones
             if (counter === 10) {
-                messageDisplay.textContent = "You’re just getting started";
+                messageDisplay.textContent = "Off to a good start!";
             } else if (counter === 25) {
-                messageDisplay.textContent = "Wow, that’s a lot of cookies";
+                messageDisplay.textContent = "You really like clicking, don't ya?";
             } else if (counter === 50) {
-                messageDisplay.textContent = "Are you still clicking?";
+                messageDisplay.textContent = "Almost there, keep going!";
             } else if (counter === 100) {
-                messageDisplay.textContent = "You win! Maybe take a break";
+                messageDisplay.textContent = "Isn't your finger tired?";
             }
 
+            // Use a different emoji or image
+            button.textContent = "🔶 Click me!";
+
+            // Change the background color at milestones
+            if (counter === 10) {
+                document.body.style.backgroundColor = "yellow";
+            } else if (counter === 25) {
+                document.body.style.backgroundColor = "green";
+            } else if (counter === 50) {
+                document.body.style.backgroundColor = "blue";
+            } else if (counter === 100) {
+                document.body.style.backgroundColor = "red";
+            }
+
+            // Add your name or a fun twist (example: Space Clicker, Cat Clicker)
+            document.title = "🔶 Orange Diamond Clicker";
 
         });
     </script>
